@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #F0F1F3;
+    overflow: hidden;
+    
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0F1F3;
+}
+
+.header {
+    width: 50vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 5vh;
+    margin: 20px 0px 0px 58px;
+}
+
+.header p {
+    color: #183153;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.part1 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 10fr);
+    grid-gap: 1.5rem;
+}
+
+.icons {
+    width: 130px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+.icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(24, 49, 83);
+
+}
+
+.icons p {
+    display: flex;
+    color: #717579;
+    font-size: 14px;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+
+    .header {
+        display: none;
+    }
+
+    .part1 {
+        grid-template-columns: repeat(2, 0.2fr);
+        grid-gap: 0.5rem;
+
+    }
+
+    .icons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icons i {
+        font-size: 45px;
+        padding: 15px;
+    }
+
+    .icons p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:480px) {
+    .header {
+        display: none;
+    }
+
+    .part1 {
+        grid-template-columns: repeat(3, 0.2fr);
+    }
+
+    .icons {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icons i {
+        font-size: 35px;
+        padding: 15px;
+
+    }
+
+    .icons p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:600px) {
+    .header {
+        display: none;
+    }
+
+    .part1 {
+        grid-template-columns: repeat(4, 0fr);
+    }
+
+    .icons {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icons i {
+        font-size: 25px;
+        padding: 10px;
+
+    }
+
+    .icons p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:700px)  {
+    .header {
+        display: none;
+    }
+
+    .part1 {
+        grid-template-columns: repeat(5, 0.2fr);
+    }
+
+    .icons {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icons i {
+        font-size: 35px;
+        padding: 10px;
+
+    }
+
+    .icons p {
+        font-size: 9px;
+    }
+}
