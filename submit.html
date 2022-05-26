@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="./submit.css">
+</head>
+
+<body>
+    <div class="wrapper" >
+        <h1>User Detail Page</h1>
+        <div id="result-table">
+            <table border="1">
+                <tr>
+                    <th>Username</td>
+                    <th>Address</td>
+                    <th>password</th>
+                    <th>Phone</td>
+                </tr>
+                <tr>
+                    <td id="first"></td>
+                    <td id="second"></td>
+                    <td id="third"></td>
+                    <td id="fourth"></td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    
+    <form action="./01.html">
+        <button>Go Back</button>
+    </div>
+    </form>
+
+    <script>
+        setTimeout(function(){
+            console.log("hello");
+            console.log(localStorage.getItem('username'));
+            document.getElementById('first').innerText = localStorage.getItem('username');
+            document.getElementById('third').innerText = localStorage.getItem('password');
+        },5000)
+        
+    </script>
+    <!-- <script>
+       setTimeout ( window.onload = function () {
+            document.getElementById('first').innerText = localStorage.getItem('username');
+            document.getElementById('third').innerText = localStorage.getItem('password');
+        }
+       ,5000)
+    </script> -->
+    
+</body>
+
+</html>
